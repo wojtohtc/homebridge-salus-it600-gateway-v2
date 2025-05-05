@@ -1,0 +1,29 @@
+{
+  "pluginAlias": "Salus-iT600-v2",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true
+      },
+      "thermostatModels": {
+        "title": "Thermostat Model (eg. SQ610)",
+        "type": "array",
+        "items": {
+          "title": "Model",
+          "type": "string"
+        },
+        "required": true
+      }
+    }
+  }
+}
